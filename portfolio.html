@@ -25,11 +25,9 @@
                 <i class="fas fa-paint-brush"></i>
                 <span>Illustration Portrait</span>
             </a>
-            
             <button class="mobile-menu-btn" id="mobileMenuBtn">
                 <i class="fas fa-bars"></i>
             </button>
-            
             <nav id="nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -304,7 +302,7 @@ effect: "coverflow",
    
       loop:true,
         autoplay: {
-          delay: 100000,
+          delay: 3000,
         },
 
 
@@ -327,10 +325,11 @@ effect: "coverflow",
               slidesPerView: 3,
               spaceBetween: 20,
             },
-            320: {
+            420: {
               freemode:true,
-              slidesPerView: 3,
-              spaceBetween: 20,
+              slidesPerView: 1,
+              spaceBetween: 10,
+
             }
       }
 
@@ -392,7 +391,7 @@ effect: "coverflow",
                 }
                 if (document.body.classList.contains('hidden')) {
                     document.body.classList.remove('hidden');
-                }
+                }   
             });
         });
         
