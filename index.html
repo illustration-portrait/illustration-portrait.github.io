@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illustration Portrait</title>
+    <meta name="description" content="Professional digital artwork and illustration services in vibrant cartoon style. Custom portraits for websites, social media, and more.">
+    <!-- Favicon -->
+    <link rel="icon" href="ip.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cal+Sans&display=swap" rel="stylesheet">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        swiper-container {
+        width: 100%;
+        padding-top: 50px;
+        /* padding-bottom: 50px; */
+        }
+
+        swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+        }
+
+        swiper-slide img {
+        display: block;
+        width: 100%;
+        }
+    </style>
+<style>
+    .card-container .swiper {
+      width: 90%;
+      /* height: 60vh; */
+      height: 100vh;
+    }
+    @media (max-width: 480px) {
+        .card-container .swiper {
+        width: 60%;
+        height: 42vh;
+      }
+    }
+
+    .card-container .swiper-slide{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .ticker-container {
+            overflow: hidden;
+            position: relative;
+            background: linear-gradient(135deg, #f5f7fa 0%, #ffa6c9 100%);
+            /* border-radius: 16px; */
+            box-shadow: 0 10px 25px -5px rgba(255, 166, 201, 0.1), 0 10px 10px -5px rgba(255, 166, 201, 0.04);
+        }
+        
+        .ticker-track {
+            display: flex;
+            width: max-content;
+            animation: scroll 30s linear infinite;
+            padding: 1.5rem 0;
+        }
+        
+        .ticker-track:hover {
+            animation-play-state: paused;
+        }
+        
+        .ticker-item {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            padding: 0 2.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .ticker-item:hover {
+            transform: scale(1.05);
+        }
+        
+        .ticker-icon {
+            font-size: 1.75rem;
+            margin-right: 1rem;
+            min-width: 40px;
+            text-align: center;
+        }
+        
+        .ticker-content {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .ticker-title {
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.25rem;
+        }
+        
+        .ticker-desc {
+            font-size: 2rem;
+            ;
+        }
+        
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        
+        /* Gradient fade effect on edges */
+        .ticker-container::before,
+        .ticker-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 150px;
+            z-index: 2;
+            pointer-events: none;
+        }
+        
+        .ticker-container::before {
+            left: 0;
+            background: linear-gradient(90deg, rgba(197,210,232,1) 0%, rgba(197,210,232,0) 100%);
+        }
+        
+        .ticker-container::after {
+            right: 0;
+            background: linear-gradient(270deg, rgba(197,210,232,1) 0%, rgba(197,210,232,0) 100%);
+        }
+        
+        /* Pulse animation for featured items */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .featured {
+            position: relative;
+        }
+        
+        .featured::after {
+            content: 'Featured';
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: #f6ad55;
+            color: white;
+            font-size: 0.6rem;
+            font-weight: bold;
+            padding: 0.25rem 0.5rem;
+            border-radius: 9999px;
+            animation: pulse 2s infinite;
+        }
+
+        .illicon_container {
+            width: 24px;
+            height: 24px;
+            margin: 0 10px
+        }
+
+        .illicon {
+            width: 100%;
+            height: 100%;
+        }
+
+        .tickersection {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        @media (max-width: 760px) {
+        
+        .tickersection {
+            width: 100%;
+            margin: 0 auto;
+            /* padding: 0 15px; */
+        }
+    }
+
+
+     .swiper-video {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+     .swiper-slide video {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper-pagination-video {
+     display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+    }
+</style>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="content" id="header">
+        <div class="header-container container">
+            <a href="#home" class="logo">
+                <i class="fas fa-paint-brush"></i>
+                <span>Illustration Portrait</span>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#OurRecentWork">Our Works</a></li>
+                    <li><a target="_self" href="portfolio.html">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://www.instagram.com/illustration_portrait_/"><img class="instaIcon" src="icons8-instagram-64.png" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/direct/t/17842520561398970"><img class="instaIcon" src="icons8-direct-message-64.png" alt=""></a></li>
+                    <li class="theme-switcher">
+                        <input type="checkbox" class="checkbox" id="checkbox">
+                        <label for="checkbox" class="checkbox-label">
+                          <i class="fas fa-moon"></i>
+                          <i class="fas fa-sun"></i>
+                          <span class="ball"></span>
+                        </label>
+                    </li>
+                  
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="container hero" id="home" data-aos="fade-up">
+        <div class="container">
+
+                   <!-- Generated by cssSlider.com 1.9 -->
+                   <div class="csslider1 autoplay cs_handle">
+                      <input name="cs_anchor1" id="cs_slide1_0" type="radio" class="cs_anchor slide">
+                      <input name="cs_anchor1" id="cs_slide1_1" type="radio" class="cs_anchor slide">
+                      <input name="cs_anchor1" id="cs_slide1_2" type="radio" class="cs_anchor slide">
+                      <input name="cs_anchor1" id="cs_slide1_3" type="radio" class="cs_anchor slide">
+                      <input name="cs_anchor1" id="cs_play1" type="radio" class="cs_anchor" checked="">
+                      <input name="cs_anchor1" id="cs_pause1_0" type="radio" class="cs_anchor pause">
+                      <input name="cs_anchor1" id="cs_pause1_1" type="radio" class="cs_anchor pause">
+                      <input name="cs_anchor1" id="cs_pause1_2" type="radio" class="cs_anchor pause">
+                      <input name="cs_anchor1" id="cs_pause1_3" type="radio" class="cs_anchor pause">
+                      <ul>
+                         <li class="cs_skeleton"><img src="img/IMG_2952.jpg" style="width: 100%;"></li>
+                         <li class="num0 img slide"><img src="img/IMG_2952.jpg" alt="no-jQuery Content Slider" title="Realtor Cartoon"></li>
+                         <li class="num1 img slide"> <img src="img/IMG_2955.jpg" alt="Content Slider with Zero jQuery" title="Realtor Cartoon"></li>
+                         <li class="num2 img slide"> <img src="img/IMG_2961.jpg" alt="Wordpress Content Slider with CSS only" title="Realtor Cartoon"></li>
+                         <li class="num3 img slide"> <img src="img/IMG_2984.jpg" alt="Responsive Content Slider w/o jQuery" title="Realtor Cartoon"></li>
+                      </ul>
+                      <div class="cs_description">
+                         <label class="num0"><span class="cs_title"><span class="cs_wrapper">Realtor Cartoon</span></span></label>
+                         <label class="num1"><span class="cs_title"><span class="cs_wrapper">Realtor Cartoon</span></span></label>
+                         <label class="num2"><span class="cs_title"><span class="cs_wrapper">Realtor Cartoon</span></span></label>
+                         <label class="num3"><span class="cs_title"><span class="cs_wrapper">Realtor Cartoon</span></span></label>
+                      </div>
+                      <div class="cs_play_pause">
+                         <label class="cs_play" for="cs_play1"><span><i></i><b></b></span></label>
+                         <label class="cs_pause num0" for="cs_pause1_0"><span><i></i><b></b></span></label>
+                         <label class="cs_pause num1" for="cs_pause1_1"><span><i></i><b></b></span></label>
+                         <label class="cs_pause num2" for="cs_pause1_2"><span><i></i><b></b></span></label>
+                         <label class="cs_pause num3" for="cs_pause1_3"><span><i></i><b></b></span></label>
+                      </div>
+                      <div class="cs_arrowprev">
+                         <label class="num0" for="cs_slide1_0"><span><i></i><b></b></span><img src="img/IMG_2952.jpg" alt="Realtor Cartoon" title="Realtor Cartoon"></label>
+                         <label class="num1" for="cs_slide1_1"><span><i></i><b></b></span><img src="img/IMG_2955.jpg" alt="Realtor Cartoon" title="Realtor Cartoon"></label>
+                         <label class="num2" for="cs_slide1_2"><span><i></i><b></b></span><img src="img/IMG_2961.jpg" alt="Realtor Cartoon" title="Realtor Cartoon"></label>
+                         <label class="num3" for="cs_slide1_3"><span><i></i><b></b></span><img src="img/IMG_2984.jpg" alt="Realtor Cartoon" title="Realtor Cartoon"></label>
+                      </div>
+                      <div class="cs_arrownext">
+                         <label class="num0" for="cs_slide1_0"><span><i></i><b></b></span><img src="img/IMG_2952.jpg" alt="Realtor Cartoon" title="Realtor Cartoon"></label>
+                         <label class="num1" for="cs_slide1_1"><span><i></i><b></b></span><img src="img/IMG_2955.jpg" alt="Realtor Cartoon" title="Realtor Cartoon"></label>
+                         <label class="num2" for="cs_slide1_2"><span><i></i><b></b></span><img src="img/IMG_2961.jpg" alt="Realtor Cartoon" title="Realtor Cartoon"></label>
+                         <label class="num3" for="cs_slide1_3"><span><i></i><b></b></span><img src="img/IMG_2984.jpg" alt="Realtor Cartoon" title="Realtor Cartoon"></label>
+                      </div>
+                      <div class="cs_bullets">
+                         <label class="num0" for="cs_slide1_0"> <span class="cs_point"></span>
+                         <span class="cs_thumb"><img src="img/IMG_2952.jpg" alt="Realtor Cartoon" title="Realtor Cartoon"></span></label>
+                         <label class="num1" for="cs_slide1_1"> <span class="cs_point"></span>
+                         <span class="cs_thumb"><img src="img/IMG_2955.jpg" alt="Realtor Cartoon" title="Realtor Cartoon"></span></label>
+                         <label class="num2" for="cs_slide1_2"> <span class="cs_point"></span>
+                         <span class="cs_thumb"><img src="img/IMG_2961.jpg" alt="Realtor Cartoon" title="Realtor Cartoon"></span></label>
+                         <label class="num3" for="cs_slide1_3"> <span class="cs_point"></span>
+                         <span class="cs_thumb"><img src="img/IMG_2984.jpg" alt="Realtor Cartoon" title="Realtor Cartoon"></span></label>
+                      </div>
+                      <div class="cs_gestures">
+                         <div>
+                            <img src="img/IMG_2952.jpg" alt="Responsive Content Slider w/o jQuery" title="Realtor Cartoon" class="cs_first_img">
+                            <img src="img/IMG_2952.jpg" alt="no-jQuery Content Slider" title="Realtor Cartoon">
+                            <img src="img/IMG_2955.jpg" alt="Content Slider with Zero jQuery" title="Realtor Cartoon">
+                            <img src="img/IMG_2961.jpg" alt="Wordpress Content Slider with CSS only" title="Realtor Cartoon">
+                            <img src="img/IMG_2984.jpg" alt="Responsive Content Slider w/o jQuery" title="Realtor Cartoon">
+                            <img src="img/IMG_2984.jpg" alt="no-jQuery Content Slider" title="Realtor Cartoon" class="cs_last_img">
+                        </div>
+                      </div>
+                   </div>
+                   <div class="clear"></div>
+        </div>
+        <!--                     <h1>Bring Your Ideas to Life with Vibrant Cartoon Illustrations</h1>
+                    <p>Professional digital artwork and illustration services that capture your personality in a fun, colorful cartoon style perfect for websites, social media, and branding.</p> -->
+    </section>
+
+    <!-- ticker -->
+
+    <section class="container tickersection" data-aos="fade-up">
+        <div class="">
+            
+            <!-- Infinity Ticker -->
+            <div class="ticker-container mb-12">
+                <div class="ticker-track">
+                    <!-- Items will be duplicated here by JavaScript -->
+                    <div class="ticker-items-container">
+                        <!-- Original items -->
+                        <div class="ticker-item">
+                            <div class="illicon_container">
+                               <img class="illicon" src="img/IMG_2952.jpg" alt="">
+                            </div>
+                            <div class="ticker-content">
+                                <span class="ticker-desc">illustration_portrait_</span>
+                            </div>
+                            <div class="illicon_container">
+                                <img class="illicon" src="img/IMG_2955.jpg" alt="">
+                             </div>
+                             <div class="ticker-content">
+                                 <span class="ticker-desc">illustration_portrait_</span>
+                             </div>
+                             <div class="illicon_container">
+                                <img class="illicon" src="img/IMG_2961.jpg" alt="">
+                             </div>
+                             <div class="ticker-content">
+                                 <span class="ticker-desc">illustration_portrait_</span>
+                             </div>
+                             <div class="illicon_container">
+                                <img class="illicon" src="img/IMG_2984.jpg" alt="">
+                             </div>
+                             <div class="ticker-content">
+                                 <span class="ticker-desc">illustration_portrait_</span>
+                             </div>
+                             <div class="illicon_container">
+                                <img class="illicon" src="img/IMG_2996.jpg" alt="">
+                             </div>
+                             <div class="ticker-content">
+                                 <span class="ticker-desc">illustration_portrait_</span>
+                             </div>
+                             <div class="illicon_container">
+                                <img class="illicon" src="img/IMG_2993.jpg" alt="">
+                             </div>
+                             <div class="ticker-content">
+                                 <span class="ticker-desc">illustration_portrait_</span>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- AboutSection -->
+    <section class="about container" id="about" data-aos="fade-up">
+        <!-- <h2>Portrait Stories</h2> -->
+        <div class="about-content">
+            <section-title-container>
+                <h2>About Our Creativity</h2>
+            </section-title-container>
+          
+            <p>At Illustration Portrait, we specialize in creating vibrant, expressive cartoon-style illustrations that bring your ideas to life. Our team of talented artists combines technical skill with creative vision to deliver artwork that stands out.</p>
+            <p>Whether you need character designs, portraits, or custom illustrations for your website or marketing materials, we've got you covered with our unique, playful style.</p>
+            
+        </div> 
+        <div class="container about-container">
+     
+            <div class="box-area">
+                <div class="box active">
+                    <img src="img/IMG_2988.jpg" alt="img">
+                    <!-- <i class="fas fa-palette"></i> -->
+                    <h3>Custom Designs</h3>
+                    <p>Every illustration is tailored to your specific needs and preferences.</p>
+                </div>
+                <div class="box">
+                    <img src="img/IMG_2987.jpg" alt="img">
+                    <!-- <i class="fas fa-bolt"></i> -->
+                    <h3>Quick Turnaround</h3>
+                    <p>Get your illustrations delivered in as little as 1-2 business days.</p>
+                </div>
+                <div class="box">
+                    <img src="img/IMG_2966.jpg" alt="img">
+                    <!-- <i class="fas fa-infinity"></i> -->
+                    <h3>Editable Options</h3>
+                    <p>We'll refine the artwork until you're 100% satisfied.</p>
+                </div>
+                <div class="box">
+                    <img src="img/IMG_3004.jpg" alt="img">
+                    <!-- <i class="fas fa-file-download"></i> -->
+                    <h3>Multiple Formats</h3>
+                    <p>Receive your files in all the formats you need for various uses.</p>
+                </div>
+            </div>
+   
+        </div>
+    </section>
+    <!-- autocompare -->
+    <section class="container" data-aos="fade-up">
+        <section-title-container>
+            <h2>Before/After</h2>
+        </section-title-container>
+  
+        <div class="contain">
+            <div class="divisor"></div>
+        </div>
+    </section>
+
+    <!-- card section -->
+
+    <section class="container" data-aos="fade-up">
+        <section-title-container>
+            <h2>Swipe Cards</h2>
+        </section-title-container>
+     
+        <div class="card-container">
+            <div data-aos="fade-up" data-aos-delay="100">
+        
+                <div class="swiper mySwiperCard">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="img/IMG_2983.jpg" alt="Cartoon"></div>
+                      <div class="swiper-slide"><img src="img/IMG_2986.jpg" alt="Cartoon"></div>
+                      <div class="swiper-slide"><img src="img/IMG_2987.jpg" alt="Cartoon"></div>
+                      <div class="swiper-slide"><img src="img/IMG_2988.jpg" alt="Cartoon"></div>
+                      <div class="swiper-slide"><img src="img/IMG_2989.jpg" alt="Cartoon"></div>
+                      <div class="swiper-slide"><img src="img/IMG_2990.jpg" alt="Cartoon"></div>
+                      <div class="swiper-slide"><img src="img/IMG_2991.jpg" alt="Cartoon"></div>
+                      <div class="swiper-slide"><img src="img/IMG_2993.jpg" alt="Cartoon"></div>
+                      <div class="swiper-slide"><img src="img/IMG_2995.jpg" alt="Cartoon"></div>
+                      <div class="swiper-slide"><img src="img/IMG_2996.jpg" alt="Cartoon"></div>
+              
+                    </div>
+                  </div>
+                  <!-- Swiper JS -->
+                  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </section>
+
+    <section class=" video" data-aos="fade-up" >
+          <!-- Swiper video -->
+        <div class="container swiper-video mySwiper-video">
+            <section-title-container>
+                <h2>2025 Instagram Trend</h2>
+            </section-title-container>
+         
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <video  preload="true" autoplay = "autoplay" loop = "loop" volume= "0" muted="muted" playsinline="playsinline"  poster="">
+                <source src="img/2025-04-21 23_24_48.MP4" type="video/mp4">
+            </video>
+            </div>
+            <div class="swiper-slide">
+                <video  preload="true" autoplay = "autoplay" loop = "loop" volume= "0" muted="muted" playsinline="playsinline"  poster="">
+                <source src="img/2025-04-25 01_30_43.MP4" type="video/mp4">
+            </video>
+            </div>
+            <div class="swiper-slide">
+                <video  preload="true" autoplay = "autoplay" loop = "loop" volume= "0" muted="muted" playsinline="playsinline"  poster="">
+                <source src="img/2025-04-28 16_23_41.mov" type="video/mp4">
+            </video>
+            </div>
+            <div class="swiper-slide">
+                <video  preload="true" autoplay = "autoplay" loop = "loop" volume= "0" muted="muted" playsinline="playsinline"  poster="">
+                <source src="img/2025-05-01 14_56_50.MP4" type="video/mp4">
+            </video>
+            </div>
+            <div class="swiper-slide">
+                <video  preload="true" autoplay = "autoplay" loop = "loop" volume= "0" muted="muted" playsinline="playsinline"  poster="">
+                <source src="img/2025-05-01 16_09_14.mov" type="video/mp4">
+            </video>
+            </div>
+            </div>
+            <div class="swiper-pagination-video"></div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section class="services container" data-aos="fade-up" id="services">
+        <div class="container">
+            <section-title-container>
+                <h2>Our Illustration Services</h2>
+            </section-title-container>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-image">
+                        <img src="img/IMG_3002.jpg" alt="Cartoon Portraits">
+                    </div>
+                    <div class="service-content">
+                        <h3>Cartoon Portraits</h3>
+                        <p>Get your portrait or your loved ones transformed into cartoon characters perfect for social media profiles, gifts, business cards,avatars, printing t-shirts or branding.</p>
+                        <a href="#contact" class="btn btn-accent">Order Now</a>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-image">
+                        <img src="img/IMG_3005.jpg" alt="Character Design">
+                    </div>
+                    <div class="service-content">
+                        <h3>Character Design</h3>
+                        <p>Original character designs for animations, books, or branding. We'll bring your unique characters to life with personality.</p>
+                        <a href="#contact" class="btn btn-accent">Order Now</a>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-image">
+                        <img src="img/IMG_2985.jpg" alt="Website Illustrations">
+                    </div>
+                    <div class="service-content">
+                        <h3>Illustrations & Logos</h3>
+                        <p>Custom illustrations and logos for your website that capture your brand's personality and make your site stand out from the competition.</p>
+                        <a href="#contact" class="btn btn-accent">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /* ourwork */ -->
+    <section class="portfolio container" data-aos="fade-up" id="OurRecentWork" >
+        <div class="container">
+            <section-title-container>
+                <h2 >Our Current Works</h2>
+            </section-title-container>
+        
+            <div class="base-template">
+                <div class="wrapper base-template__wrapper">
+                    <div class="base-template__content">
+                        <div class="rotating-slider">
+                            <!-- Slider Content -->
+                            <div class="rotating-slider__content">
+                                <div class="rotating-slider__background"></div>
+                                <div class="rotating-slider__wrapper">
+                                    <!-- Slide 1 -->
+                                    <div class="rotating-slider__slide" data-title="illustration_portrait_">
+                                        <img class="rotating-slider__image" src="img/IMG_3003.jpg" alt="Cartoon Portraits">
+                                    </div>
+                                    <!-- Slide 2 -->
+                                    <div class="rotating-slider__slide" data-title="illustration_portrait_">
+                                        <img class="rotating-slider__image" src="img/IMG_3009.jpg" alt="Cartoon Portraits">
+                                    </div>
+                                    <!-- Slide 3 -->
+                                    <div class="rotating-slider__slide" data-title="illustration_portrait_">
+                                        <img class="rotating-slider__image" src="img/IMG_2963.jpg" alt="Cartoon Portraits">
+                                    </div>
+                                    <!-- Slide 4 -->
+                                    <div class="rotating-slider__slide" data-title="illustration_portrait_">
+                                        <img class="rotating-slider__image" src="img/IMG_3011.jpg" alt="Cartoon Portraits">
+                                    </div>
+                                    <!-- Slide 5 -->
+                                    <div class="rotating-slider__slide" data-title="illustration_portrait_">
+                                        <img class="rotating-slider__image" src="img/IMG_2962.jpg" alt="Cartoon Portraits">
+                                    </div>
+                                </div>
+                                <!-- Slider Title -->
+                                <div class="rotating-slider__title">
+                                    <div class="rotating-slider__list"></div>
+                                </div>
+                                <!-- Slider Navigation -->
+                                <div class="rotating-slider__navigation">
+                                    <button class="rotating-slider__prev">
+                                        <img src="https://bato-web-agency.github.io/bato-shared/img/rotating-slider/prev.svg" alt="Previous Slide">
+                                    </button>
+                                    <button class="rotating-slider__next">
+                                        <img src="https://bato-web-agency.github.io/bato-shared/img/rotating-slider/next.svg" alt="Next Slide">
+                                    </button>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio -->
+    <section class="swiper-porfolio container" data-aos="fade-up">
+        <section-title-container>
+            <h2>Swipe</h2>
+        </section-title-container>
+     
+        <swiper-container class="mySwiper" pagination="false" effect="coverflow" grab-cursor="true" centered-slides="true"
+        slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+        coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+        <swiper-slide>
+        <img src="img/IMG_2993.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+        <img src="img/IMG_3006.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+        <img src="img/IMG_2985.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+        <img src="img/IMG_2969.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+        <img src="img/IMG_2967.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+        <img src="img/IMG_2968.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+        <img src="img/IMG_2956.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+        <img src="img/IMG_2957.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+        <img src="img/IMG_2958.jpg" />
+        </swiper-slide>
+    </swiper-container>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    </section>
+    <!-- swiper section -->
+    <section class="container" data-aos="fade-up">
+        <div class="wrapper">
+            <div class="slider">
+            <div class="slider__inner">
+                <div class="slider__item">
+                <img class="slider__image" src="img/IMG_2955.jpg" alt="Image 1">
+                <img class="slider__image" src="img/IMG_2955.jpg" alt="Image 1">
+                <img class="slider__image" src="img/IMG_2955.jpg" alt="Image 1">
+                <img class="slider__image" src="img/IMG_2955.jpg" alt="Image 1">
+                <img class="slider__image" src="img/IMG_2955.jpg" alt="Image 1">
+                </div>
+                <div class="slider__item">
+                <img class="slider__image" src="img/IMG_2958.jpg" alt="Image 2">
+                <img class="slider__image" src="img/IMG_2958.jpg" alt="Image 2">
+                <img class="slider__image" src="img/IMG_2958.jpg" alt="Image 2">
+                <img class="slider__image" src="img/IMG_2958.jpg" alt="Image 2">
+                <img class="slider__image" src="img/IMG_2958.jpg" alt="Image 2">
+                </div>
+                <div class="slider__item">
+                <img class="slider__image" src="img/IMG_2970.jpg" alt="Image 3">
+                <img class="slider__image" src="img/IMG_2970.jpg" alt="Image 3">
+                <img class="slider__image" src="img/IMG_2970.jpg" alt="Image 3">
+                <img class="slider__image" src="img/IMG_2970.jpg" alt="Image 3">
+                <img class="slider__image" src="img/IMG_2970.jpg" alt="Image 3">
+                </div>
+            </div> <!-- /slider__inner -->
+            </div> <!-- /slider -->
+        
+        </div> <!-- /wrapper -->
+    </section>
+    <!-- compare -->
+     <section class="container compare" data-aos="fade-up">
+        <section-title-container>
+            <h2 >Compare</h2>
+        </section-title-container>
+   
+        <div class="compare" >
+            <div id='img1'></div>
+            <div id='img2'></div>
+            <div id='controller'>
+            <div> ◄ </div>
+            <div id='line'>‌</div>
+            <div> ► </div>
+            </div>
+        </div>
+    </section>
+   <!-- Image Slider Container -->
+    <section class="container" data-aos="fade-up">
+        <!-- Swiper 2: Fade Effect -->
+        <section-title-container>
+            <h2  data-aos="fade-up">Client Testimonials</h2>
+        </section-title-container>
+        <div class="swiper portfolioSwiper2" data-aos="fade-up">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>The cartoon portraits Illustration Portrait created for our team exceeded all expectations. They perfectly captured each person's personality in such a fun, vibrant way. Our website visitors constantly compliment them!</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Sarah Johnson">
+                            </div>
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>Marketing Director, TechStart Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>Working with Illustration Portrait on our game characters was an absolute pleasure. They took our vague descriptions and turned them into exactly what we envisioned - only better! The characters have so much personality.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Michael Chen">
+                            </div>
+                            <div class="author-info">
+                                <h4>Michael Chen</h4>
+                                <p>Game Developer, PixelDream Studios</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>I ordered cartoon portraits of my family as a gift, and they were the hit of the holiday season! The artist captured each family member's unique features and personality quirks perfectly. We'll treasure these forever.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Emily Rodriguez">
+                            </div>
+                            <div class="author-info">
+                                <h4>Emily Rodriguez</h4>
+                                <p>Satisfied Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="container" data-aos="fade-up">
+        <section-title-container>
+            <h2>Our Creative Process</h2>
+        </section-title-container>
+      
+            <div class="swiper portfolioSwiper3" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="step">
+                            <img src="img/IMG_2965.jpg" alt="Illustration portrait process">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Consultation</h3>
+                                <p>We discuss your vision, preferences, and requirements to understand exactly what you're looking for.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="step">
+                            <img src="img/IMG_2956.jpg" alt="Illustration portrait process">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Sketching</h3>
+                                <p>Our artists create initial sketches to establish composition and character designs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="step">
+                            <img src="img/IMG_2953.jpg" alt="Illustration portrait process">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Revision</h3>
+                                <p>You provide feedback and we refine the artwork until it's perfect.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="step">
+                            <img src="img/IMG_2952.jpg" alt="Illustration portrait process">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3>Coloring</h3>
+                                <p>We apply our signature vibrant color palette to bring the illustration to life.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="step">
+                            <img src="img/IMG_3005.jpg" alt="Illustration portrait process">
+                            <div class="step-number">5</div>
+                            <div class="step-content">
+                                <h3>Delivery</h3>
+                                <p>You receive high-quality digital files in all the formats you need.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+    </section>
+    <section-title-container>
+        <h2>By The Numbers</h2>
+    </section-title-container>
+  
+    <!-- Stats Section -->
+    <section class="stats container" data-aos="fade-up">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="counter" data-target="2000">0</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="counter" data-target="2780">0</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="counter" data-target="20">0</h3>
+                    <p>Countries Served</p>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="counter" data-target="1570">0</h3>
+                    <p>Positive Reviews</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+
+
+    <!-- Contact Section -->
+    <section class="container contact" data-aos="fade-up" id="contact">
+        <div class="container">
+            <section-title-container>
+                <h2>Get In Touch</h2>
+            </section-title-container>
+            <div class="contact-container" data-aos="fade-up">
+                <div class="contact-info">
+                    <!-- <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>123 Illustration Street, Creative City, CC 12345</p>
+                        </div>
+                    </div> -->
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email Us</h3>
+                            <a href="mailto:faceillustration4u@gmail.com">faceillustration4u@gmail.com</a>
+                        </div>
+                    </div>
+                    <!-- <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div> -->
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h3>Working Hours</h3>
+                            <p>Monday - Sunday: 9am - 8pm</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <img class="instaIcon" src="icons8-instagram-64.png" alt="">
+                        </div>
+                        <div>
+                            <h3>Instagram</h3>
+                            <a href="https://www.instagram.com/illustration_portrait_/">illustration_portrait_</a>
+                        </div>
+          
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input name="name" type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input name="email" type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input  name="evt" type="text" id="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea name="message" id="message" class="form-control" required></textarea>
+                        </div>
+                        <button value="send" type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="container cta" data-aos="fade-up">
+        <div class="container">
+            <section-title-container>
+                <h2 data-aos="fade-up">Ready to Bring Your Ideas to Life?</h2>
+            </section-title-container>
+ 
+            <p data-aos="fade-up" data-aos-delay="100">Let's create something amazing together. Get started with your custom illustration project today!</p>
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="200">
+                <a href="#contact" class="btn">Get a Quote</a>
+                <a href="portfolio.html" class="btn btn-secondary">View Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container" data-aos="fade-up">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                        <h3>Illustration Portrait</h3>
+                    <p>Professional digital artwork and illustration services in vibrant cartoon style for websites, social media, and branding.</p>
+                    <div class="social-links" style="justify-content: flex-start; margin-top: 20px;">
+                        <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
+                        <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                        <a href="https://www.instagram.com/illustration_portrait_/"><img class="instaIcon" src="icons8-instagram-64.png" alt=""></a>
+                        <!-- <a href="#"><i class="fab fa-dribbble"></i></a>
+                        <a href="#"><i class="fab fa-behance"></i></a> -->
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Cartoon Portraits</a></li>
+                        <li><a href="#">Character Design</a></li>
+                        <li><a href="#">Website Illustrations</a></li>
+                        <li><a href="#">Social Media Graphics</a></li>
+                        <li><a href="#">Book Illustrations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p>If you have any questions or would like to discuss your project, feel free to reach out!</p>
+                 
+                        <a href="https://www.instagram.com/direct/t/17842520561398970" type="submit" style="color: #fff;display: flex; gap: 1rem; justify-content: center;" class="btn btn-accent" style="width: 100%;">Message Me <img class="instaIcon" src="icons8-direct-message-64.png" alt=""></a>
+                    </form>
+                </div>
+            </div>
+            
+            <div style="text-align: center;">
+                <section-title-container>
+                <h2>Payment Methods</h2>
+                </section-title-container>  
+                <div class="payment-icon zelle-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" width="40" height="40">
+                      <rect width="100%" height="100%" fill="#6c30c0" rx="5" />
+                      <text x="50%" y="60%" font-size="10" fill="white" font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">Zelle</text>
+                    </svg>
+                  </div>
+                  <!-- Venmo Icon -->
+                <div class="payment-icon venmo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" width="40" height="40">
+                    <rect width="100%" height="100%" fill="#3D95CE" rx="5" />
+                    <text x="50%" y="60%" font-size="8" fill="white" font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">Venmo</text>
+                    </svg>
+                </div>
+                            <!-- PayPal Icon -->
+                <div class="payment-icon paypal-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" width="40" height="40">
+                    <rect width="100%" height="100%" fill="#003087" rx="5"/>
+                    <text x="50%" y="60%" font-size="7" fill="white" font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">PayPal</text>
+                    </svg>
+                </div>
+                <!-- Cash App Icon -->
+                <div class="payment-icon cashapp-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" width="40" height="40">
+                    <rect width="100%" height="100%" fill="#00C244" rx="5"/>
+                    <text x="50%" y="60%" font-size="7" fill="white" font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">Cash</text>
+                    </svg>
+                </div>
+                <!-- Apple Pay Icon --> 
+  
+  
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Illustration Portrait. All Rights Reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <button id="backToTop" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Scripts -->
+
+    <script src="index.js"></script>
+
+    <script>
+        window.addEventListener("load", function() {
+            const headerHeight = header.offsetHeight;
+        const heroSection = document.querySelector(".hero");
+        heroSection.style.paddingTop = `${headerHeight}px`;
+
+        console.log(headerHeight, "${headerHeight}");
+        
+   
+        const heroHeight = heroSection.offsetHeight;
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".mySwiperCard", {
+          effect: "cards",
+          grabCursor: true,
+        });
+      </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+	let currentIndex = 0;
+
+	const background = document.querySelector(".rotating-slider__background");
+	const slider = document.querySelector(".rotating-slider__wrapper");
+	const title = document.querySelector(".rotating-slider__list");
+
+	const slides = [...document.querySelectorAll(".rotating-slider__slide")];
+
+	const navigation = {
+		prev: document.querySelector(".rotating-slider__prev"),
+		next: document.querySelector(".rotating-slider__next")
+	};
+
+	const updateBackground = () => {
+		const activeSlide = slides[currentIndex];
+		const activeImage = activeSlide.querySelector("img");
+
+		background.style.backgroundImage = `url(${activeImage.src})`;
+	};
+
+	const updateTitle = () => {
+		const items = slides.map((slide) => slide.getAttribute("data-title"));
+
+		title.innerHTML = "";
+
+		items.forEach((item) => {
+			const span = document.createElement("span");
+
+			span.textContent = item;
+
+			title.appendChild(span);
+		});
+
+		title.style.transform = `translateY(-${currentIndex * 52}px)`;
+	};
+
+	const updateNavigation = () => {
+		navigation.prev.classList.toggle("hidden", currentIndex === 0);
+		navigation.next.classList.toggle(
+			"hidden",
+			currentIndex === slides.length - 1
+		);
+
+		if (currentIndex === 0) {
+			navigation.prev.setAttribute("disabled", "");
+		} else {
+			navigation.prev.removeAttribute("disabled");
+		}
+
+		if (currentIndex === slides.length - 1) {
+			navigation.next.setAttribute("disabled", "");
+		} else {
+			navigation.next.removeAttribute("disabled");
+		}
+	};
+
+	const updateSlider = () => {
+		slides.forEach((slide, index) => {
+			slide.classList.remove("active");
+
+			if (index === currentIndex) {
+				slide.classList.add("active");
+			} else {
+				slide.classList.remove("active");
+			}
+		});
+
+		slider.style.transform = `translateX(-${currentIndex * 270}px)`;
+
+		updateBackground();
+		updateTitle();
+		updateNavigation();
+	};
+
+	navigation.prev.addEventListener("click", () => {
+		if (currentIndex <= 0) return;
+
+		currentIndex--;
+
+		updateSlider();
+	});
+
+	navigation.next.addEventListener("click", () => {
+		if (currentIndex >= slides.length - 1) return;
+
+		currentIndex++;
+
+		updateSlider();
+	});
+
+	updateSlider();
+});
+
+// Trying Behaviour Delegation instead of "JS classes"
+
+const ANIMATING_CLASS = 'slider__item--animating';
+
+const Slider = {
+  init() {
+    this.sliderEl = document.querySelector('.slider');
+    this.slideInnerEl = document.querySelector('.slider__inner');
+    this.sliderItemsEl = document.querySelectorAll('.slider__item');
+    this.offset = 0;
+    this.direction = 'left';
+    this.maxOffset = (this.sliderItemsEl.length - 1) * 100;
+
+    this.slideInnerEl.addEventListener('transitionend', this.onSliderTransitionEnd.bind(this));
+    setInterval(this.slide.bind(this), 3000);
+  },
+  slide() {
+    if (this.isMaxLeft()) {
+      this.direction = 'right';
+    } else if (this.isMaxRight()) {
+      this.direction = 'left';
+    }
+
+    this.moveSlider();
+  },
+  isMaxLeft() {
+    return this.offset <= -this.maxOffset;
+  },
+  isMaxRight() {
+    return this.offset >= 0;
+  },
+  getCurrentPage() {
+    if (this.offset < 0) {
+      return (this.offset * -1) / 100;
+    }
+
+    return this.offset / 100;
+  },
+  getSignal() {
+    return this.direction === 'left' ? -1 : 1;
+  },
+  onSliderTransitionEnd() {
+    const signal = this.getSignal();
+    const currentPage = this.getCurrentPage();
+
+    this.sliderItemsEl.forEach(element => element.classList.remove(ANIMATING_CLASS));
+  },
+  moveSlider() {
+    const signal = this.getSignal();
+    const currentPage = this.getCurrentPage();
+
+    this.offset = this.offset + (signal * 100);
+    this.sliderItemsEl[currentPage].classList.add(ANIMATING_CLASS);
+    this.sliderItemsEl[currentPage + (-1 * signal)].classList.add(ANIMATING_CLASS);
+    this.slideInnerEl.style.setProperty('--slider-offset', `${this.offset}%`);
+  }
+};
+
+const slider = Object.create(Slider);
+slider.init();
+
+
+    </script>
+
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Main JS -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+            $(".box") .click (function () {
+        $ (".box") .removeClass ("active");
+        $ (this) .addClass ("active");
+    });
+    </script>
+
+    <script>
+        !function(e){function t(e,t){if(!e)return[];for(var a=[],n=new RegExp("(^| )"+t+"( |\\d|$)"),s=e.getElementsByTagName("*"),r=0,o=s.length;o>r;r++)n.test(s[r].className)&&a.push(s[r]);return a}function a(e,t){var a=new RegExp("(^|\\s)"+t+"(\\s|$)","g");return a.test(e.className)||(e.className=(e.className+" "+t).replace(/\s+/g," ").replace(/(^ | $)/g,"")),e}function n(e,t){var a=new RegExp("(^|\\s)"+t+"(\\s|$)","g");return e.className=e.className.replace(a,"$1").replace(/\s+/g," ").replace(/(^ | $)/g,""),e}function s(e,t){for(var a in t)e.style[a]=t[a]}function r(e,t,a){if(e){t=t.split(" ");for(var n in t)e.addEventListener(t[n],a,!1)}}function o(o){a(o,"cs_handle");var i=t(o.getElementsByTagName("ul")[0],"img"),c=e.createElement("div"),l=e.createElement("div");a(l,"cs_gestures"),l.appendChild(c),o.appendChild(l),c.appendChild(a(i[i.length-1].getElementsByTagName("img")[0].cloneNode(),"cs_first_img"));for(var p in i)c.appendChild(i[p].getElementsByTagName("img")[0].cloneNode());c.appendChild(a(i[0].getElementsByTagName("img")[0].cloneNode(),"cs_last_img"));var d=t(o,"cs_anchor slide"),m=0,g=0,f=300,u=15,h=0,v=o.clientWidth;r(o,"mousedown touchstart",function(e){if(!/cs_play_pause|cs_arrowprev|cs_arrownext|cs_bullets|cs_thumb/g.test(e.target.parentNode.className)&&!/cs_bullets/g.test(e.target.parentNode.parentNode.className)){m=(e.touches?e.touches[0]:e).pageX,g=0,e.stopPropagation(),v=o.clientWidth;for(var t in d)if(d[t].checked){h=t;break}a(o,"cs_grab"),d[h].checked=!0,s(c,{WebkitTransition:"",transition:"",WebkitTransform:"translate3d("+-v*h+"px,0px,0px)",transform:"translate3d("+-v*h+"px,0px,0px)"})}}),r(e,"mousemove touchmove",function(e){if(m){var t=(e.touches?e.touches[0]:e).pageX;e.preventDefault(),e.stopPropagation(),g=t-m>=v?v+m:-v>=t-m?-v+m:t,a(l,"cs_show"),s(c,{WebkitTransform:"translate3d("+(-v*h+g-m)+"px,0px,0px)",transform:"translate3d("+(-v*h+g-m)+"px,0px,0px)"})}}),r(e,"mouseup touchend",function(e){if(m){g&&(e.preventDefault(),e.stopPropagation()),n(o,"cs_grab");var t=m-g,a=0;if(g&&Math.max(t,-1*t)>u){for(var r in d)if(d[r].checked){t>0&&r<d.length-1?h=1*r+1:0>t&&r>0?h=1*r-1:0>t?(a=-1,h=d.length-1):(a=d.length,h=0);break}d[h].checked=!0}var i=Math.max((v+(t>0?-1:1)*t)/v,.3);s(c,{WebkitTransition:"-webkit-transform "+f*i+"ms linear",transition:"transform "+f*i+"ms linear",WebkitTransform:"translate3d("+-v*(a||h)+"px,0px,0px)",transform:"translate3d("+-v*(a||h)+"px,0px,0px)"}),g=0,m=0}});var x=t(o,"cs_anchor");for(var p in x)(function(e){r(x[e],"change",function(){e!=h&&n(l,"cs_show")})})(p)}window.cssSliderGestures||(window.cssSliderGestures=1,(!e.all||window.atob)&&r(window,"load",function(){for(var a=t(e.body,"csslider"),n=0,s=a.length;s>n;n++)new o(a[n])}))}(document);
+    </script>
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const nav = document.getElementById('nav');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            nav.querySelector('ul').classList.toggle('active');
+            // document.querySelector("body").style.overflow = "hidden"
+            document.body.classList.toggle('hidden');
+            mobileMenuBtn.innerHTML = nav.querySelector('ul').classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', () => {
+                // document.body.style.overflowY = "auto";
+          
+                if (nav.querySelector('ul').classList.contains('active')) {
+                    nav.querySelector('ul').classList.remove('active');
+                    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                    // document.body.style.overflowY = "auto";
+                }
+
+                if (document.body.classList.contains('hidden')) {
+                    document.body.classList.remove('hidden');
+                }
+            });
+        });
+        
+        // Header scroll effect
+ 
+            // if (window.scrollY > 100) {
+            //     header.classList.add('scrolled');
+            // } else {
+            //     header.classList.remove('scrolled');
+            // }
+            var prevScrollpos = window.pageYOffset;
+
+            /* Get the header element and it's position */
+            var headerDiv = document.querySelector("header");
+            var headerBottom = headerDiv.offsetTop + headerDiv.offsetHeight;
+
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+
+            /* if scrolling down, let it scroll out of view as normal */
+            if (prevScrollpos <= currentScrollPos ){
+                headerDiv.classList.remove("scrolled");
+                headerDiv.style.top ="-7.2rem";
+            }
+            /* otherwise if we're scrolling up, fix the nav to the top */
+            else if(prevScrollpos => currentScrollPos) {  
+                headerDiv.classList.add("scrolled");
+                headerDiv.style.top = "0";
+            }
+
+            prevScrollpos = currentScrollPos;
+
+
+            var backToTopButton = document.getElementById("backToTop");
+           // When the user scrolls down 20px from the top of the document, show the button
+
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    backToTopButton.style.display = "block";
+                } else {
+                    backToTopButton.style.display = "none";
+                }
+
+
+
+            }
+
+            var backToTopButton = document.getElementById("backToTop");
+
+                        // When the user clicks on the button, scroll to the top of the document
+            backToTopButton.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth" // Smooth scroll
+            });
+            });
+   
+        
+        // Back to top button
+       // Get the button
+
+
+
+        
+        // Initialize AOS animation
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        // Initialize Swiper sliders
+        // Swiper 1: Default
+        const swiper1 = new Swiper('.portfolioSwiper1', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: '.portfolioSwiper1 .swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                992: {
+                    slidesPerView: 3,
+                }
+            }
+        });
+        
+        // Swiper 2: Fade Effect
+        const swiper2 = new Swiper('.portfolioSwiper2', {
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
+            pagination: {
+                el: '.portfolioSwiper2 .swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+        
+        // Swiper 3: Cube Effect
+        const swiper3 = new Swiper('.portfolioSwiper3', {
+            effect: 'cube',
+            grabCursor: true,
+            autoplay:true,
+            cubeEffect: {
+             
+            },
+            pagination: {
+                el: '.portfolioSwiper3 .swiper-pagination',
+                clickable: true,
+            },
+        });
+        
+        // Swiper 4: Coverflow Effect
+        const swiper4 = new Swiper('.portfolioSwiper4', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.portfolioSwiper4 .swiper-pagination',
+                clickable: true,
+            },
+        });
+        
+        // Counter animation for stats
+        const counters = document.querySelectorAll('.counter');
+        const speed = 1400;
+        
+        function animateCounters() {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const increment = target / speed;
+                
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(animateCounters, 1);
+                } else {
+                    counter.innerText = target;
+                }
+            });
+        }
+        
+        // Start counter animation when stats section is in view
+        const statsSection = document.querySelector('.stats');
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                animateCounters();
+                observer.unobserve(statsSection);
+            }
+        });
+        
+        observer.observe(statsSection);
+        
+        // Form submission
+        // document.getElementById('contactForm').addEventListener('submit', function(e) {
+        //     e.preventDefault();
+        //     alert('Thank you for your message! We will get back to you soon.');
+        //     this.reset();
+        // });
+        
+        // document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+        //     e.preventDefault();
+        //     alert('Thank you for subscribing to our newsletter!');
+        //     this.reset();
+        // });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+    <script>
+
+var controller = document.getElementById('controller');
+
+var myCompare = document.querySelector('.compare');
+
+// change controller's location
+
+function moveController(x) {
+  if(x >= 0 && x + 2 < myCompare.offsetWidth) {
+    document.getElementById('img1').style.width = x + 'px';
+    controller.style.left = x - 20 + 'px';
+    currentWidth = (x / myCompare.offsetWidth) * 100;
+  }
+}
+
+// set animation time
+
+function setAnimationTime(s) {
+  controller.style.transitionDuration = s + 's';
+  document.getElementById('img1').style.transitionDuration = s + 's';
+}
+
+// controller's location fixed on resize
+
+var currentWidth = 30;
+window.addEventListener('resize', function() {
+  document.getElementById('img1').style.width = currentWidth + '%';
+  controller.style.left = 'calc(' + currentWidth + '% - 20px)';
+});
+
+// for pc and mobile with click and touch
+
+myCompare.addEventListener('mousedown', function(e) {
+  setAnimationTime(0.7);
+  let x = e.pageX;
+  moveController(x);
+})
+
+myCompare.addEventListener('mouseup', function() {
+  setAnimationTime(0);
+})
+
+// for pc with drag
+
+dragElement(controller);
+
+function dragElement(element) {
+  
+  element.onmousedown = dragMouseDown;
+
+  function dragMouseDown(e) {
+    document.onmouseup = closeDragElement;
+    document.onmousemove = elementDrag;
+    controller.style.cursor = 'grabbing';
+  }
+
+  function elementDrag(e) {
+    let x = e.pageX;
+    moveController(x);
+    setAnimationTime(0);
+  }
+  
+  function closeDragElement() {
+    document.onmouseup = null;
+    document.onmousemove = null;
+    controller.style.cursor = 'grab';
+  }
+}
+
+// for mobile with drag
+  
+controller.addEventListener('touchmove', function(e) {
+  let x = e.targetTouches[0].pageX;
+  moveController(x);
+  setAnimationTime(0);
+})
+  
+controller.addEventListener('touchend', function() {
+  setAnimationTime(0);
+})
+    </script>
+
+
+<!-- ticker -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Duplicate ticker items for seamless infinite scroll
+        const tickerItemsContainer = document.querySelector('.ticker-items-container');
+        const tickerTrack = document.querySelector('.ticker-track');
+        
+        // Clone all items and append them to create the infinite effect
+        const items = tickerItemsContainer.innerHTML;
+        tickerItemsContainer.innerHTML = items;
+        
+        // Adjust animation duration based on content width for better responsiveness
+        function adjustTickerSpeed() {
+            const tickerContainer = document.querySelector('.ticker-container');
+            const tickerWidth = tickerTrack.scrollWidth / 2; // We only need original width (not duplicated)
+            const containerWidth = tickerContainer.offsetWidth;
+            
+            // Calculate duration based on content length (longer content = faster speed)
+            const duration = Math.max(20, 10 * (tickerWidth / containerWidth));
+            tickerTrack.style.animationDuration = `${duration}s`;
+        }
+        
+        // Initial adjustment
+        adjustTickerSpeed();
+        
+        // Adjust on window resize
+        window.addEventListener('resize', adjustTickerSpeed);
+        
+        // Add click event to ticker items
+        document.querySelectorAll('.ticker-item').forEach(item => {
+            item.addEventListener('click', function() {
+                const title = this.querySelector('.ticker-title').textContent;
+                alert(`You clicked on: ${title}`);
+            });
+        });
+    });
+</script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper-video", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination-video",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
+
+</body>
+</html>
