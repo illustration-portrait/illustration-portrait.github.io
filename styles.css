@@ -2276,7 +2276,7 @@ padding: 0.4rem 0 !important;
   /* testimonials */
 
 .scroll-container {
-	height: 100svh;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -2315,8 +2315,8 @@ padding: 0.4rem 0 !important;
 
 /* @media (max-width: 760px) {
  .infinite-scroll-items .item-wrap {
-	max-width: 238px;
-	height: 315px;
+	max-width: 100%;
+	height: 100%;
 
 }
 } */
@@ -2326,6 +2326,14 @@ padding: 0.4rem 0 !important;
 	height: 100%;
 	object-fit: cover;
 	transition: transform 0.3s ease;
+}
+
+@media (max-width: 760px) {
+.item-wrap img {
+
+	object-fit: contain;
+
+}
 }
 
 
