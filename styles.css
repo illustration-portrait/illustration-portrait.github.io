@@ -2133,7 +2133,7 @@ cursor: ew-resize;
   
   /*full image modal */
   .modal {
-    z-index: 22222222222222222222222;
+    z-index: 1000000000;
     display: none;
     position: fixed;
     left: 0;
@@ -2142,6 +2142,7 @@ cursor: ew-resize;
     height: 100%;
     overflow: hidden;
     background-color: #fff; /* set window back ground color */
+     transform: translateZ(0);
   }
   .griditem:hover
   .modal-content {
