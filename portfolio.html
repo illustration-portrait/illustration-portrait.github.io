@@ -350,9 +350,10 @@ effect: "coverflow",
                 var modal = document.getElementById("modal01");
                 const header = document.querySelector("header");
                  modal.style.top =  window.scrollY - window.top.innerHeight + "px";
+                          document.body.classList.add("hidden");
                 header.style.display = "none";
                 // document.body.style.overflow = "hidden !important";
-                document.body.classList.add("hidden");
+       
            
                 modal.style.display = "block";
 
@@ -362,12 +363,13 @@ effect: "coverflow",
                 var img01 = document.getElementById("img01");
                 img01.src = x.src;
                 document.getElementById("btn1").addEventListener("click", function () {
+                          document.body.classList.remove("hidden");
                 modal01.style.display = "none";
                 // modal.style.top = 0;
                 // document.body.style.overflow = "auto";
                 header.style.display = "block";
                 // document.body.style.overflow = "";
-                          document.body.classList.remove("hidden");
+                    
                 document.body.style.position = "";
                 });
             }

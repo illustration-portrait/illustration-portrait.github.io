@@ -2140,7 +2140,7 @@ cursor: ew-resize;
     /* below covers window area*/
     width: 100%;
     height: 100%;
-    overflow: hidden !important;
+    overflow: hidden;
     background-color: #fff; /* set window back ground color */
      transform: translateZ(0);
   }
