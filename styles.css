@@ -2135,7 +2135,7 @@ cursor: ew-resize;
   .modal {
     z-index: 22222222222222222222222;
     display: none;
-    position: absolute;
+    position: fixed;
     left: 0;
     /* below covers window area*/
     width: 100%;
@@ -2259,7 +2259,11 @@ border-radius: 5px;
 }
 
 .portfolio-body header.scrolled {
-padding: 0.4rem 0 !important;
+/* padding: 60px 0 !important; */
+}
+
+.portfolio-section  {
+    padding: 60px 0 !important;;
 }
 
 .payment-icon {

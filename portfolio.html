@@ -187,7 +187,7 @@
     
       <div id="modal01" class="modal">
     
-        <img id="img01" class="mod-img animate-zoom">
+        <img id="img01" class="mod-img container animate-zoom">
     
         <div id="btn1" class="modal-btn ">Close</div>
          <div class="modal-content" >  
@@ -347,10 +347,11 @@ effect: "coverflow",
             } else {
                 var modal = document.getElementById("modal01");
                 const header = document.querySelector("header");
+                     modal.style.top =  window.scrollY - parent.top.innerHeight + "px";
                 header.style.display = "none";
                 document.body.style.overflow = "hidden";
                 document.body.style.position = "relative";
-                modal.style.top =  window.scrollY - window.top.innerHeight + "px";
+           
                 modal.style.display = "block";
 
             //new overlay div
