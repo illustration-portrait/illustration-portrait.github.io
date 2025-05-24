@@ -1394,19 +1394,20 @@ const itemWidth = 238;
 const wrapper = document.getElementById("InfiniteScrollWrapper");
 const content = document.getElementById("InfiniteScroll");
 
+const originalItems = Array.from(content.children).slice(0, defaultItemCount);
+
 const manageChildren = (childCount) => {
-	while (content.children.length > defaultItemCount) {
-		content.removeChild(content.lastChild);
-	}
+  // Remove all
+  content.innerHTML = '';
 
-	for (let i = 0; i < childCount; i++) {
-		for (let j = 0; j < defaultItemCount; j++) {
-			const clone = content.children[j].cloneNode(true);
-			content.appendChild(clone);
-		}
-	}
+  // Clone and append
+  for (let i = 0; i <= childCount; i++) {
+    originalItems.forEach((item) => {
+      content.appendChild(item.cloneNode(true));
+    });
+  }
 
-	content.style.width = `${itemWidth * defaultItemCount * (childCount + 1)}px`;
+  content.style.width = `${itemWidth * defaultItemCount * (childCount + 1)}px`;
 };
 
 const core = (width) => {

@@ -349,12 +349,14 @@ effect: "coverflow",
             } else {
                 var modal = document.getElementById("modal01");
                 const header = document.querySelector("header");
-                     modal.style.top =  window.scrollY - parent.top.innerHeight + "px";
+                 modal.style.top =  window.scrollY - window.top.innerHeight + "px";
                 header.style.display = "none";
-                document.body.style.overflow = "hidden";
-                document.body.style.position = "relative";
+                // document.body.style.overflow = "hidden !important";
+                document.body.classList.add("hidden");
            
                 modal.style.display = "block";
+
+                console.log( document.body, " document.body");
 
             //new overlay div
                 var img01 = document.getElementById("img01");
@@ -364,7 +366,8 @@ effect: "coverflow",
                 // modal.style.top = 0;
                 // document.body.style.overflow = "auto";
                 header.style.display = "block";
-                document.body.style.overflow = "";
+                // document.body.style.overflow = "";
+                          document.body.classList.remove("hidden");
                 document.body.style.position = "";
                 });
             }
