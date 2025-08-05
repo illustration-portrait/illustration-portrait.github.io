@@ -2159,7 +2159,7 @@ cursor: ew-resize;
   @media (max-width: 760px) {
     .modal-btn {
       right: 1%;
-      top: 3%;
+      top: 1%;
     }
   }
   .modal-btn:hover {
